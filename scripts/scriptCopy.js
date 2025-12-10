@@ -15,7 +15,7 @@ for (let i = 0;i<games.length;i++){
    
    readscore += games[i].score;
 }
-console.log(readscore)
+console.log(`all scores added are: ${readscore}`)
 // Goal 2: Create another loop that only calculates total of scores greater than 5
 // Follow Up: Print your result to the console using string interpolation for clarity.
 
@@ -25,7 +25,7 @@ for(let i = 0;i<games.length;i++){
     greaterScore += games[i].score
   }
 }
-console.log(greaterScore)
+console.log(`scores added only if greater than 5: ${greaterScore}`)
 
 //  Goal 3: Find the game with the highest score.
 // Follow Up: Print your result to the console using string interpolation for clarity.
@@ -36,7 +36,7 @@ for (let i = 0; i<games.length; i++){
     highScore = games[i].score;
   }
 }
-console.log(highScore)
+console.log(`the high score was ${highScore}`)
 // 🌟🌟 Bonus: Print out EACH game that scored above 'average'
 
 let totalScore = 0;
@@ -48,7 +48,7 @@ let avgScore = totalScore / games.length;
 for (let i = 0;i<games.length;i++){
    
   if (games[i].score > avgScore) {
-    console.log(games[i].name)
+    console.log(`The game that scored higher than average is ${games[i].name}`)
   }
 }
 

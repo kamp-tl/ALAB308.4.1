@@ -55,3 +55,5 @@ for (let obj of objectsArray) {
 }
 
 console.log(csvString)
+
+//warm up 

@@ -48,10 +48,10 @@ console.log(objectsArray)
 
 //back to csv 
 let csvheaders = Object.keys(objectsArray[0]);
-let csvString = csvheaders.join(',')+'\n';
+let csvString = csvheaders.join(',');
 for (let obj of objectsArray) {
     let row = csvheaders.map(key => obj[key]);
-    csvString += row.join(',') + '\n';
+    csvString += row.join(',');
 }
 
 console.log(csvString)

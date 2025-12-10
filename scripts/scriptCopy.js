@@ -48,7 +48,7 @@ let avgScore = totalScore / games.length;
 for (let i = 0;i<games.length;i++){
    
   if (games[i].score > avgScore) {
-    console.log(`The game that scored higher than average is ${games[i].name}`)
+    console.log(`A game that scored higher than average is ${games[i].name}`)
   }
 }
 
